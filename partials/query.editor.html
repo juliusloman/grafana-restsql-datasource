@@ -1,0 +1,58 @@
+<query-editor-row query-ctrl="ctrl" class="generic-datasource-query-row">
+	<div class="gf-form-inline">
+		<div class="gf-form">
+			<div>
+				<label class="gf-form-label">Resource (table)</label>
+			<select class="gf-form-input"
+			      ng-change="ctrl.switchResource(ctrl.target.resource)"
+						ng-model="ctrl.target.resource"
+						ng-options="d for d in ctrl.target.resourceList | orderBy: d">
+			</select>
+		</div>
+		<div>
+			<label class="gf-form-label">Time column</label>
+			<select class="gf-form-input"
+			      ng-change="ctrl.refresh()"
+						ng-model="ctrl.target.timeColumn"
+						ng-options="d for d in ctrl.target.columnList | orderBy: d">
+			</select>
+		</div>
+		<div>
+			<label class="gf-form-label">Metric column</label>
+			<select class="gf-form-input"
+			      ng-change="ctrl.refresh()"
+						ng-model="ctrl.target.dataColumn"
+						ng-options="d for d in ctrl.target.columnList | orderBy: d">
+			</select>
+		</div>
+
+
+			<!-- <select class="gf-form-input"
+			      ng-change="ctrl.switchCURIDatasource(ctrl.target.curidatasource)"
+						ng-model="ctrl.target.column"
+						ng-options="d.uri as d.label for d in ctrl.target.curidatasourceslist | orderBy:'label'">
+			</select>
+ -->
+			<!--
+			<select class="gf-form-input"
+			      ng-change="ctrl.switchCURIDataset(ctrl.target.curidataset)"
+						ng-model="ctrl.target.curidataset"
+						ng-options="d.uri as d.label for d in ctrl.target.curidatasetslist | orderBy:'label'">
+			</select>
+
+			<select class="gf-form-input"
+			      ng-change="ctrl.switchCURIColumn(ctrl.target.curicolumn)"
+						ng-model="ctrl.target.curicolumn"
+						ng-options="d.id as d.label for d in ctrl.target.curicolumnlist | orderBy:'label'">
+			</select>
+
+			<input type="text"
+        ng-model="ctrl.target.filter"
+        class="gf-form-input"> -->
+    </div>
+
+
+
+		</div>
+	</div>
+</query-editor-row>

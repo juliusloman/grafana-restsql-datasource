@@ -1,0 +1,33 @@
+{
+  "name": "RestSQL",
+  "id": "lomo-restsql-datasource",
+  "type": "datasource",
+
+  "staticRoot": ".",
+
+  "metrics": true,
+  "annotations": false,
+
+  "info": {
+    "description": "RestSQL Datasource",
+    "author": {
+      "name": "Julius Loman",
+      "url": "http://lomo.kyberia.net"
+    },
+    "logos": {
+      "small": "img/restsql.png",
+      "large": "img/restsql.png"
+    },
+    "links": [
+      {"name": "GitHub", "url": "https://github.com/"},
+      {"name": "MIT License", "url": "https://github.com/grafana/"}
+    ],
+    "version": "1.0.0",
+    "updated": "2016-07-28"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "3.x.x",
+    "plugins": [ ]
+  }
+}
