@@ -15,13 +15,13 @@ Database configuration is done in restsql.properties (set at least sqlresources.
 
 Sample resource configuration:
 
-  <rs:sqlResource xmlns:rs="http://restsql.org/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://restsql.org/schema SqlResource.xsd ">
+``` xml <rs:sqlResource xmlns:rs="http://restsql.org/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://restsql.org/schema SqlResource.xsd ">
   <query>select metric, timestamp from mytable</query>
   <metadata>
   <database default="mydb"/>
   <table name="mytable" role="Parent"/>
   </metadata>
-  </rs:sqlResource>
+  </rs:sqlResource>```
 
 
 ## Grafana plugin
