@@ -18,7 +18,7 @@ System.register([], function(exports_1, context_1) {
                     this.q = $q;
                 }
                 RestSQLDatasource.prototype.testDatasource = function () {
-                    return this.restSQLRequest('URI_RESOURCE').then(function (response) {
+                    return this.restSQLRequest(this.URI_RESOURCE).then(function (response) {
                         if (response.status === 200) {
                             return {
                                 status: "success",

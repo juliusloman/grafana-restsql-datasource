@@ -23,7 +23,7 @@ class RestSQLDatasource {
   }
 
   testDatasource() {
-    return this.restSQLRequest('URI_RESOURCE').then(function (response) {
+    return this.restSQLRequest(this.URI_RESOURCE).then(function (response) {
       if (response.status === 200) {
         return {
               status: "success",
